@@ -1,0 +1,97 @@
+.containerDishes {
+  margin-top: 100px;
+}
+.allBtn {
+  text-align: center;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.allBtn button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.3s;
+  margin: 10px;
+}
+.allBtn button:hover {
+  background-color: #ff8e28;
+  color: #fff;
+}
+.contentDishes {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.contentDishes .box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contentDishes .box .img {
+  padding: 0 60px;
+}
+.allInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentDishes .box .starsContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.contentDishes .box .starsContent h5 {
+  font-weight: 300;
+  font-size: 15px;
+}
+.contentDishes .box .starsContent span {
+  margin: 0 3px;
+  color: crimson;
+}
+.contentDishes .box h3 {
+  margin: 5px 0;
+}
+.contentDishes .box h2 {
+  color: crimson;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px;
+}
+.add {
+  transform: translateX(-30px);
+  padding: 10px 15px;
+  background-color: #00a850;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: 0.3s;
+  color: #fff;
+  transition: 0.3s;
+}
+.add:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media (max-width: 1340px) {
+  .contentDishes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 725px) {
+  .contentDishes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .allInfo {
+    flex-direction: column;
+  }
+  .add {
+    transform: translateX(90px);
+  }
+}

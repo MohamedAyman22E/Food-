@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import "./App.css";
+import About from "./components/About/About";
+import Blog from "./components/Blog/Blog";
+import Dishes from "./components/Dishes/Dishes";
+import Home from "./components/Home/Home";
+import NavBar from "./components/NavBar/NavBar";
+import Shop from "./components/Shop/Shop";
+import Stuff from "./components/Stuff/Stuff";
+import { useSelector } from "react-redux";
+import { Footer } from "./components/Footer/Footer";
 function App() {
+  const item = useSelector(state => state?.cart?.itemList);
+  console.log(item);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/dishes" element={<Dishes />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

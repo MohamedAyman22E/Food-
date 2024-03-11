@@ -1,0 +1,118 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000000000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 20px 0;
+}
+.navContainerActive {
+  position: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  top: -20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.navList ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navList ul li a {
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navList ul li a.active,
+.navList ul li:hover a {
+  color: #ff8e28;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.form {
+  position: relative;
+}
+.form input {
+  padding: 10px;
+  box-shadow: 0 12px 8px 0 rgb(213 151 96/6%);
+  background-color: #fff;
+  width: 100%;
+  border-radius: 2px;
+}
+.form .search {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: #000;
+  right: 5px;
+  font-size: 18px;
+}
+.iconRedux {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.iconRedux .bigIcon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.iconRedux .bigIcon span {
+  background-color: orangered;
+  color: #fff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  position: absolute;
+  font-size: 12px;
+}
+.menu {
+  font-size: 20px;
+  display: none;
+}
+@media (max-width: 980px) {
+  .navList {
+    position: fixed;
+    top: 85px;
+    left: -100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 0;
+    transition: 0.5s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  .navListActive {
+    left: 0%;
+  }
+  .navList ul {
+    flex-direction: column;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .bigIcon {
+    display: none;
+  }
+}

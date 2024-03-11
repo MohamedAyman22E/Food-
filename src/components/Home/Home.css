@@ -1,0 +1,260 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+.heroTop {
+  padding-top: 50px;
+}
+.heroTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+}
+.home .box {
+  width: 33%;
+}
+/* start left */
+.left span {
+  font-family: "Satisfy", sans-serif;
+  color: #ff8e28;
+  font-size: 25px;
+  font-weight: 400;
+}
+.left h2 {
+  font-size: 80px;
+  line-height: 80px;
+}
+.left p {
+  color: #8d8d8d;
+}
+.left .allBtn {
+  display: flex;
+  gap: 20px;
+}
+.left .allBtn button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 30px;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 20px;
+}
+.left .allBtn .btn1 {
+  background-color: #ff8e28;
+}
+.left .allBtn .btn2 {
+  background-color: #00a850;
+}
+/* start right */
+.right ul {
+  position: relative;
+}
+.right ul::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 23px;
+  width: 2px;
+  height: 100%;
+  background-color: #e0ddd7;
+}
+.right ul li {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.right ul li h2 {
+  font-size: 20px;
+}
+.right ul li p {
+  color: #8d8d8d;
+  margin: 20px 0;
+}
+.right ul li .num {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 15px;
+  font-weight: 600;
+  position: relative;
+}
+/* start bottom */
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.bottom .iconBottom {
+  display: flex;
+  gap: 30px;
+}
+.bottom .iconBottom .social {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.bottom .playIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bottom .playIcon .play {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 55px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+/* start all about hero */
+.heading {
+  text-align: center;
+  margin-top: 70px;
+}
+.heading h3 {
+  font-family: "Satisfy", sans-serif;
+  color: #ff8e28;
+  font-size: 25px;
+  font-weight: 400;
+}
+.heading h2 {
+  font-size: 50px;
+}
+.allAboutHero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  margin-top: 50px;
+  gap: 20px;
+}
+.allAboutHero .box {
+  background-color: #fff;
+  transition: 0.3s;
+  padding: 20px;
+  position: relative;
+  border-radius: 2px;
+}
+.allAboutHero .box:hover {
+  background-color: #ff8e28;
+  color: #fff;
+}
+.allAboutHero .box .info span {
+  font-size: 60px;
+  color: #ff8e28;
+  transition: 0.3s;
+}
+.allAboutHero .box:hover .info span {
+  color: #fff;
+}
+.allAboutHero .box h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.allAboutHero .box .img {
+  padding: 30px;
+}
+.allAboutHero .box h3 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 50px;
+  color: #fff;
+  opacity: 0.3;
+}
+@media (max-width: 1175px) {
+  .left h2 {
+    font-size: 50px;
+  }
+  .left .allBtn {
+    gap: 10px;
+  }
+  .left .allBtn button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1175px) {
+  .left .allBtn button {
+    font-size: 10px;
+    padding: 16px 20px;
+  }
+}
+@media (max-width: 975px) {
+  .right ul li p {
+    font-size: 12px;
+  }
+  .right ul li .num {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    position: relative;
+  }
+}
+@media (max-width: 877px) {
+  .left h2 {
+    font-size: 40px;
+  }
+  .left span {
+    font-size: 20px;
+  }
+  .right ul li h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 810px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .box {
+    width: 100%;
+  }
+  .home .box.center {
+    padding: 0 100px;
+  }
+  .heroTop::before {
+    height: 80%;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 680px) {
+  .bottom {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .bottom .iconBottom {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .home .box.center {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 400px) {
+  .heading h3 {
+    font-family: "Satisfy", sans-serif;
+    color: #ff8e28;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .heading h2 {
+    font-size: 30px;
+  }
+}

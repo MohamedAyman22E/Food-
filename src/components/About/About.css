@@ -1,0 +1,93 @@
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 130px;
+}
+.aboutInfo {
+  width: 50%;
+}
+.aboutInfo span {
+  font-family: "Satisfy", sans-serif;
+  color: #ff8e28;
+  font-size: 25px;
+  font-weight: 400;
+}
+.aboutInfo h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.aboutInfo p {
+  color: #8d8d8d;
+}
+.aboutInfo .price {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.aboutInfo .price button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 30px;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 20px;
+  background-color: #00a850;
+  transition: 0.3s;
+}
+.aboutInfo .price button:hover {
+  opacity: 0.9;
+}
+.aboutInfo .price h3 {
+  color: #ff8e28;
+  font-size: 30px;
+}
+.aboutInfo .price sub {
+  color: #8d8d8d;
+}
+.aboutImg {
+  width: 50%;
+  text-align: center;
+}
+.aboutImg img {
+  width: 80%;
+}
+
+@media (max-width: 1210px) {
+  .aboutInfo h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 850px) {
+  .aboutContainer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .aboutInfo {
+    width: 100%;
+  }
+  .aboutInfo h2 {
+    font-size: 40px;
+  }
+  .aboutImg {
+    width: 70%;
+  }
+  .aboutImg img {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .aboutInfo h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 420px) {
+  .aboutInfo .price {
+    flex-direction: column-reverse;
+    gap: 00px;
+    align-items: flex-start;
+  }
+}
