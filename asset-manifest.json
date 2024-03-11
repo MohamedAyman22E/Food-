@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Food-/static/css/main.4ea52bcf.css",
+    "main.js": "/Food-/static/js/main.1b6add57.js",
+    "static/media/hero.png": "/Food-/static/media/hero.bd943a62fac19e01ff7e.png",
+    "static/media/offer_img.png": "/Food-/static/media/offer_img.26e88e18c83e09da3063.png",
+    "static/media/offer_bg.jpg": "/Food-/static/media/offer_bg.11cee991aea9f19b4cb6.jpg",
+    "static/media/b2.jpg": "/Food-/static/media/b2.179972c31a16ec9dfe37.jpg",
+    "static/media/d2.png": "/Food-/static/media/d2.ce22270be37cd423a619.png",
+    "static/media/d1.png": "/Food-/static/media/d1.f9ac955955cb1d297dad.png",
+    "static/media/d5.png": "/Food-/static/media/d5.0b7e17c5a86a9cf7ed2f.png",
+    "static/media/cta_app.png": "/Food-/static/media/cta_app.7f5e0e547763f6824986.png",
+    "static/media/b3.jpg": "/Food-/static/media/b3.e995fab834471afd2bb4.jpg",
+    "static/media/b1.jpg": "/Food-/static/media/b1.76f1b9a7ef8d62f54fac.jpg",
+    "static/media/d3.png": "/Food-/static/media/d3.cd725f0bbc6202120996.png",
+    "static/media/d4.png": "/Food-/static/media/d4.bcaed939371dfa963ed9.png",
+    "static/media/d6.png": "/Food-/static/media/d6.4799c583bad5deec69a9.png",
+    "static/media/t1.png": "/Food-/static/media/t1.84b224ff13708f0da45a.png",
+    "static/media/t3.png": "/Food-/static/media/t3.1dd8f78efc88763d8c6d.png",
+    "static/media/t2.png": "/Food-/static/media/t2.b02be88379b5a1ac7ec8.png",
+    "static/media/menu4.png": "/Food-/static/media/menu4.877206fe32c7fab69f3d.png",
+    "static/media/menu2.png": "/Food-/static/media/menu2.6bf7e096e9a69dc78dbc.png",
+    "static/media/menu3.png": "/Food-/static/media/menu3.0ab914ce12743b557827.png",
+    "static/media/menu1.png": "/Food-/static/media/menu1.b5c43cc23f696df01036.png",
+    "index.html": "/Food-/index.html",
+    "main.4ea52bcf.css.map": "/Food-/static/css/main.4ea52bcf.css.map",
+    "main.1b6add57.js.map": "/Food-/static/js/main.1b6add57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ea52bcf.css",
+    "static/js/main.1b6add57.js"
+  ]
+}
